@@ -1,0 +1,10 @@
+<div class="module firebaserss" ng-controller="FirebaserssController">
+
+  <div ng-repeat="item in firebaserss.modulescope.items">
+    <koa-card heading="{{item.title | cleanHex}}" image="{{item.thumbnail}}" ng-click="goToLink('{{item.url}}')">
+      <div class="card-content">
+        {{item.description}}
+      </div>
+    </koa-card>
+  </div>
+</div>

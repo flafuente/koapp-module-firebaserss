@@ -1,0 +1,74 @@
+{
+  "name": "Firebase Rss",
+  "identifier": "firebaserss",
+  "description": {
+    "es-ES": "",
+    "en-US": ""
+  },
+  "documentation": {
+    "es-ES": "",
+    "en-US": ""
+  },
+  "descriptionShort": {
+    "es-ES": "",
+    "en-US": ""
+  },
+  "icon": "code",
+  "type": "A",
+  "version": "1.0",
+  "author": "Fernando Lafuente",
+  "category": [
+    "others"
+  ],
+  "price": 0,
+  "subscription": false,
+  "canContain": false,
+  "icon": "view-stream",
+  "platforms": [
+    "android",
+    "ios",
+    "windows"
+  ],
+  "deps": ["https://git-wip-us.apache.org/repos/asf/cordova-plugin-inappbrowser.git"],
+  "view": "modules/firebaserss/index.html",
+  "files": [
+    "modules/firebaserss/controller.js", "modules/firebaserss/factory.js"
+  ],
+  "libs": [{
+    "bower": {
+      "firebase": "2.2.4"
+    },
+    "src": "bower_components/firebase/firebase.js"
+  }, {
+    "bower": {
+      "angularfire": "1.1.2"
+    },
+    "src": "bower_components/angularfire/dist/angularfire.min.js"
+  }],
+  "scope": {
+    "src": ""
+  },
+  "config": [{
+    "type": "input",
+    "key": "src",
+    "templateOptions": {
+      "description": "Firebas url",
+      "pattern": "(https?://)([/\\w.()-]*).*",
+      "required": true,
+      "label": "Url"
+    }
+  }],
+  "showOn": {
+    "market": true,
+    "dragDrop": true
+  },
+  "images": {
+    "list": "modules/firebaserss/images/list.png",
+    "screenshots": [
+      "modules/firebaserss/images/screenshot01.png"
+    ],
+    "popover": "modules/firebaserss/images/popover.png",
+    "banner": "modules/firebaserss/images/banner.png",
+    "logo": "modules/firebaserss/images/logo.png"
+  }
+}
